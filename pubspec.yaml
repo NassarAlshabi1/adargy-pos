@@ -68,12 +68,6 @@ flutter_launcher_icons:
 
 flutter:
   uses-material-design: true
-
-  # Eng: Nassar Alshabi
-  developer:
-    name: "Nassar Alshabi"
-    email: "eng.nassar@example.com"
-    url: "https://github.com/NassarAlshabi1"
   assets:
      - lib/assets/fonts/cairo.ttf
      - lib/assets/fonts/NotoNaskhArabic-Regular.ttf
