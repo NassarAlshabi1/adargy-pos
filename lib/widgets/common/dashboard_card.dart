@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../theme/app_theme.dart';
 
 class DashboardCard extends StatelessWidget {
@@ -88,7 +87,7 @@ class DashboardCard extends StatelessWidget {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: valueTextColor,
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                 ),
               ),
               const SizedBox(height: 4),
@@ -99,7 +98,7 @@ class DashboardCard extends StatelessWidget {
                   color: isDark
                       ? AppTheme.darkSecondaryTextColor
                       : AppTheme.lightSecondaryTextColor,
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                 ),
               ),
             ],

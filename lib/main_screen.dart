@@ -204,22 +204,22 @@ class _MainScreenState extends State<MainScreen>
         builder: (context) => AlertDialog(
           title: Text(
             'تأكيد استعادة البيانات',
-            style: const TextStyle(fontFamily: 'Arial', fontWeight: FontWeight.bold),
+            style: const TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold),
             textAlign: TextAlign.right,
           ),
           content: Text(
             'سيتم استبدال جميع البيانات الحالية (الإدخالات، العملاء، المعاملات، السدادات) بالنسخة الاحتياطية المختارة. هل أنت متأكد من المتابعة؟',
-            style: const TextStyle(fontFamily: 'Arial'),
+            style: const TextStyle(fontFamily: 'Roboto'),
             textDirection: ui.TextDirection.rtl,
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: Text('إلغاء', style: const TextStyle(fontFamily: 'Arial')),
+              child: Text('إلغاء', style: const TextStyle(fontFamily: 'Roboto')),
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, true),
-              child: Text('استعادة', style: const TextStyle(fontFamily: 'Arial')),
+              child: Text('استعادة', style: const TextStyle(fontFamily: 'Roboto')),
             ),
           ],
           actionsAlignment: MainAxisAlignment.spaceBetween,
@@ -336,7 +336,7 @@ class _MainScreenState extends State<MainScreen>
               style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
-                fontFamily: 'Arial',
+                fontFamily: 'Roboto',
               ),
             ),
           ],
@@ -545,7 +545,7 @@ class _MainScreenState extends State<MainScreen>
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontFamily: 'Arial',
+                    fontFamily: 'Roboto',
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -554,7 +554,7 @@ class _MainScreenState extends State<MainScreen>
                   style: const TextStyle(
                     fontSize: 14,
                     color: Colors.white,
-                    fontFamily: 'Arial',
+                    fontFamily: 'Roboto',
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -702,7 +702,7 @@ class _MainScreenState extends State<MainScreen>
                     fontSize: 12,
                     fontWeight:
                         isSelected ? FontWeight.bold : FontWeight.normal,
-                    fontFamily: 'Arial',
+                    fontFamily: 'Roboto',
                   ),
                 ),
               ],
@@ -758,7 +758,7 @@ class _MainScreenState extends State<MainScreen>
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primaryColor,
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -768,7 +768,7 @@ class _MainScreenState extends State<MainScreen>
                 style: TextStyle(
                   fontSize: 16,
                   color: isDark ? Colors.white : Colors.grey.shade800,
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -863,7 +863,7 @@ class _AppVersion extends StatelessWidget {
               ? AppTheme.darkSecondaryTextColor
               : AppTheme.lightSecondaryTextColor,
           fontSize: 12,
-          fontFamily: 'Arial',
+          fontFamily: 'Roboto',
         ),
         textAlign: TextAlign.center,
       ),

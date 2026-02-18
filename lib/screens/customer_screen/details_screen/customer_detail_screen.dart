@@ -6,7 +6,6 @@ import 'package:daily/screens/customer_screen/details_screen/widgets/transaction
 import 'package:daily/screens/customer_screen/details_screen/widgets/summary_card.dart';
 import 'package:daily/screens/customer_screen/details_screen/utils/pdf_utils.dart';
 import 'package:daily/screens/customer_screen/details_screen/utils/dialog_utils.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /// Main screen for displaying customer details and transactions
 class CustomerDetailScreen extends StatefulWidget {

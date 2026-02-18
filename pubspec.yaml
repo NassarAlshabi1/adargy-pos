@@ -67,10 +67,6 @@ flutter_launcher_icons:
 
 flutter:
   uses-material-design: true
-  fonts:
-    - family: Arial
-      fonts:
-        - asset: lib/assets/fonts/arial.ttf
   assets:
      - lib/assets/fonts/cairo.ttf
      - lib/assets/fonts/NotoNaskhArabic-Regular.ttf

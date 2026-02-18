@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'dart:ui' as ui;
 import 'package:daily/models/customer.dart';
 import 'package:daily/screens/customer_screen/details_screen/utils/text_utils.dart';

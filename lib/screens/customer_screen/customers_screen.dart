@@ -772,7 +772,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                     const SizedBox(width: 4),
                                                     Text(
                                                         '${customer.transactions.length} عملية',
-                                                        style: const TextStyle(fontFamily: 'Arial')),
+                                                        style: const TextStyle(fontFamily: 'Roboto')),
                                                     const SizedBox(width: 10),
                                                     Icon(
                                                         Icons
@@ -782,7 +782,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                             .grey.shade600),
                                                     const SizedBox(width: 4),
                                                     Text(mostUsedCurrency,
-                                                        style: const TextStyle(fontFamily: 'Arial')),
+                                                        style: const TextStyle(fontFamily: 'Roboto')),
                                                   ],
                                                 ),
                                               ],
@@ -808,7 +808,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                                       .bold,
                                                               fontSize: 16,
                                                               color: Colors.red,
-                                                              fontFamily: 'Arial',
+                                                              fontFamily: 'Roboto',
                                                             ),
                                                           ),
                                                         TextSpan(
@@ -869,7 +869,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                       SnackBar(
                                                         content: Text(
                                                           'رصيد العميل صفر - لا يوجد مبلغ للسداد',
-                                                          style: const TextStyle(fontFamily: 'Arial'),
+                                                          style: const TextStyle(fontFamily: 'Roboto'),
                                                         ),
                                                         backgroundColor:
                                                             Colors.orange,

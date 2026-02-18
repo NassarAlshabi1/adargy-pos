@@ -5,7 +5,6 @@ import '../models/entry.dart';
 import 'entry_form.dart';
 import 'package:provider/provider.dart';
 import '../providers/entry_provider.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class EntryDetailsScreen extends StatelessWidget {
   final Entry entry;

@@ -6,7 +6,6 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:printing/printing.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:intl/intl.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'dart:ui' as ui;
 import 'dart:io';
 import '../../models/entry.dart';
