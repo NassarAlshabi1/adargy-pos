@@ -1,11 +1,11 @@
 buildscript {
-    ext.kotlin_version = '1.7.10' // Define Kotlin version here
+    ext.kotlin_version = '2.0.0' // Updated Kotlin version for Flutter 3.41 compatibility
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2' // Ensure this is up-to-date
+        classpath 'com.android.tools.build:gradle:8.7.3' // Updated AGP to 8.7.3 for compatibility
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Add Kotlin plugin
     }
 }
