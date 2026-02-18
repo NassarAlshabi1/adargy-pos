@@ -204,22 +204,22 @@ class _MainScreenState extends State<MainScreen>
         builder: (context) => AlertDialog(
           title: Text(
             'تأكيد استعادة البيانات',
-            style: const TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold),
+            style: TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold),
             textAlign: TextAlign.right,
           ),
           content: Text(
             'سيتم استبدال جميع البيانات الحالية (الإدخالات، العملاء، المعاملات، السدادات) بالنسخة الاحتياطية المختارة. هل أنت متأكد من المتابعة؟',
-            style: const TextStyle(fontFamily: 'Roboto'),
+            style: TextStyle(fontFamily: 'Roboto'),
             textDirection: ui.TextDirection.rtl,
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: Text('إلغاء', style: const TextStyle(fontFamily: 'Roboto')),
+              child: Text('إلغاء', style: TextStyle(fontFamily: 'Roboto')),
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, true),
-              child: Text('استعادة', style: const TextStyle(fontFamily: 'Roboto')),
+              child: Text('استعادة', style: TextStyle(fontFamily: 'Roboto')),
             ),
           ],
           actionsAlignment: MainAxisAlignment.spaceBetween,
@@ -333,7 +333,7 @@ class _MainScreenState extends State<MainScreen>
             const SizedBox(width: 10),
             Text(
               message,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
                 fontFamily: 'Roboto',
@@ -401,7 +401,7 @@ class _MainScreenState extends State<MainScreen>
   //       child: TextField(
   //         controller: _searchController,
   //         textDirection: ui.TextDirection.rtl,
-  //         style: const TextStyle(),
+  //         style: TextStyle(),
   //         decoration: InputDecoration(
   //           hintText: 'بحث...',
   //           hintTextDirection: ui.TextDirection.rtl,
@@ -541,7 +541,7 @@ class _MainScreenState extends State<MainScreen>
               children: [
                 Text(
                   'دفتر مهندس',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -551,7 +551,7 @@ class _MainScreenState extends State<MainScreen>
                 const SizedBox(height: 4),
                 Text(
                   'إدارة العملاء والتقارير اليومية',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 14,
                     color: Colors.white,
                     fontFamily: 'Roboto',
@@ -579,7 +579,7 @@ class _MainScreenState extends State<MainScreen>
       ),
       title: Text(
         title,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 15,
           fontWeight: FontWeight.w500,
           color: isDark ? Colors.white : Colors.grey.shade800,
@@ -727,7 +727,7 @@ class _MainScreenState extends State<MainScreen>
         ),
         title: Text(
           'حول التطبيق',
-          style: const TextStyle(
+          style: TextStyle(
             fontWeight: FontWeight.bold,
             color: isDark ? Colors.white : Colors.grey.shade800,
           ),
@@ -754,7 +754,7 @@ class _MainScreenState extends State<MainScreen>
               const SizedBox(height: 16),
               Text(
                 'دفتر مهندس',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primaryColor,
@@ -812,7 +812,7 @@ class _MainScreenState extends State<MainScreen>
               ),
               child: Text(
                 'موافق',
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -837,7 +837,7 @@ class _DrawerSectionTitle extends StatelessWidget {
       padding: const EdgeInsets.only(right: 16, left: 16, top: 16, bottom: 8),
       child: Text(
         title,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 12,
           fontWeight: FontWeight.bold,
           color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
@@ -904,7 +904,7 @@ class _AboutInfoItem extends StatelessWidget {
             const SizedBox(width: 8),
             Text(
               value,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: isDark ? Colors.white : Colors.grey.shade800,
@@ -914,7 +914,7 @@ class _AboutInfoItem extends StatelessWidget {
             const Spacer(),
             Text(
               '$label ',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
                 color: isDark

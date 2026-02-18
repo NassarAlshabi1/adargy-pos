@@ -159,7 +159,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                                 .map((value) => DropdownMenuItem<String>(
                                     value: value,
                                     child: Text(value,
-                                        style: const TextStyle())))
+                                        style: TextStyle())))
                                 .toList(),
                             onChanged: (newValue) {
                               setStateDialog(() {
@@ -185,7 +185,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                             Expanded(
                               child: Text(
                                 'تغيير العملة الافتراضية سيؤثر على المعاملات الجديدة فقط',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 12,
                                   color: Colors.blue.shade700,
                                 ),
@@ -202,7 +202,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                     onPressed: () => Navigator.pop(context),
                     child: Text(
                       'إلغاء',
-                      style: const TextStyle(color: Colors.grey.shade600),
+                      style: TextStyle(color: Colors.grey.shade600),
                     ),
                   ),
                   ElevatedButton(
@@ -214,7 +214,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                             SnackBar(
                               content: Text(
                                 'يرجى إدخال اسم العميل',
-                                style: const TextStyle(),
+                                style: TextStyle(),
                               ),
                               backgroundColor: Colors.red,
                             ),
@@ -250,7 +250,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                             SnackBar(
                               content: Text(
                                 'تم تحديث بيانات العميل بنجاح',
-                                style: const TextStyle(),
+                                style: TextStyle(),
                               ),
                               backgroundColor: Colors.green,
                             ),
@@ -265,7 +265,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    child: Text('حفظ التغييرات', style: const TextStyle()),
+                    child: Text('حفظ التغييرات', style: TextStyle()),
                   ),
                 ],
               ),
@@ -287,7 +287,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
       appBar: AppBar(
         title: Text(
           widget.customer.name,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
@@ -354,7 +354,7 @@ class _CustomerDetailScreenState extends State<CustomerDetailScreen> {
           const SizedBox(height: 16),
           Text(
             'لا توجد معاملات حتى الآن',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
             ),

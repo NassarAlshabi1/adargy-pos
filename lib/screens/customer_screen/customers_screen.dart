@@ -356,7 +356,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
             const SizedBox(width: 4),
             Text(
               label,
-              style: const TextStyle(
+              style: TextStyle(
                 color: isActive
                     ? Colors.white
                     : (isDark ? Colors.grey.shade400 : Colors.grey.shade700),
@@ -400,7 +400,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                 size: 16,
                 color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
               ),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.normal,
                 color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
@@ -411,7 +411,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                   value: currency,
                   child: Text(
                     currency,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.normal,
                     ),
@@ -462,7 +462,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                       const SizedBox(height: 16),
                       Text(
                         'لا يوجد عملاء حتى الآن',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: nameFontSize,
                           color: isDark
                               ? Colors.grey.shade400
@@ -475,7 +475,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                         icon: const Icon(Icons.add),
                         label: Text(
                           'إضافة عميل جديد',
-                          style: const TextStyle(),
+                          style: TextStyle(),
                         ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: accentColor,
@@ -520,7 +520,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                       _isSearching
                                           ? 'نتائج البحث: ${_filteredCustomers.length}'
                                           : 'عدد العملاء: ${_customers.length}',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: detailFontSize,
                                         fontWeight: FontWeight.bold,
                                         color: isDark
@@ -531,7 +531,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                     if (!_isSearching)
                                       Text(
                                         _getSortDescription(),
-                                        style: const TextStyle(
+                                        style: TextStyle(
                                           fontSize: 11,
                                           color: isDark
                                               ? Colors.grey.shade500
@@ -560,7 +560,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                         const SizedBox(width: 6),
                                         Text(
                                           'إضافة عميل',
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold),
@@ -611,12 +611,12 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                   const EdgeInsets.symmetric(horizontal: 12),
                               child: TextField(
                                 controller: _searchController,
-                                style: const TextStyle(
+                                style: TextStyle(
                                     color:
                                         isDark ? Colors.white : Colors.black),
                                 decoration: InputDecoration(
                                   hintText: 'ابحث...',
-                                  hintStyle: const TextStyle(
+                                  hintStyle: TextStyle(
                                       color: isDark
                                           ? Colors.grey.shade500
                                           : Colors.grey.shade400),
@@ -643,7 +643,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                         children: [
                           Text(
                             'فرز :',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.w600,
                               color: isDark ? Colors.white70 : Colors.black87,
@@ -703,7 +703,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                   const SizedBox(height: 16),
                                   Text(
                                     'لا توجد نتائج مطابقة',
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 16,
                                       color: isDark
                                           ? Colors.grey.shade400
@@ -755,7 +755,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                               children: [
                                                 Text(
                                                   customer.name,
-                                                  style: const TextStyle(
+                                                  style: TextStyle(
                                                     fontSize: 16,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -772,7 +772,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                     const SizedBox(width: 4),
                                                     Text(
                                                         '${customer.transactions.length} عملية',
-                                                        style: const TextStyle(fontFamily: 'Roboto')),
+                                                        style: TextStyle(fontFamily: 'Roboto')),
                                                     const SizedBox(width: 10),
                                                     Icon(
                                                         Icons
@@ -782,7 +782,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                             .grey.shade600),
                                                     const SizedBox(width: 4),
                                                     Text(mostUsedCurrency,
-                                                        style: const TextStyle(fontFamily: 'Roboto')),
+                                                        style: TextStyle(fontFamily: 'Roboto')),
                                                   ],
                                                 ),
                                               ],
@@ -802,7 +802,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                         if (runningBalance < 0)
                                                           TextSpan(
                                                             text: '- ',
-                                                            style: const TextStyle(
+                                                            style: TextStyle(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .bold,
@@ -815,7 +815,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                           text:
                                                               '${runningBalance.abs().toStringAsFixed(0)} ',
                                                           style:
-                                                              const TextStyle(
+                                                              TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 16,
@@ -831,7 +831,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                           text:
                                                               '${customer.transactions.isNotEmpty ? customer.transactions.first.currency : ''}',
                                                           style:
-                                                              const TextStyle(
+                                                              TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 16,
@@ -850,7 +850,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                     runningBalance >= 0
                                                         ? 'له'
                                                         : 'عليه',
-                                                    style: const TextStyle(
+                                                    style: TextStyle(
                                                         color: Colors
                                                             .grey.shade600),
                                                   ),
@@ -869,7 +869,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                       SnackBar(
                                                         content: Text(
                                                           'رصيد العميل صفر - لا يوجد مبلغ للسداد',
-                                                          style: const TextStyle(fontFamily: 'Roboto'),
+                                                          style: TextStyle(fontFamily: 'Roboto'),
                                                         ),
                                                         backgroundColor:
                                                             Colors.orange,
@@ -1010,7 +1010,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
         SnackBar(
           content: Text(
             confirmationMessage,
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.green,
           duration: const Duration(seconds: 4),
@@ -1021,7 +1021,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
         SnackBar(
           content: Text(
             'حدث خطأ أثناء التسوية: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),

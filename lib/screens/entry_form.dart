@@ -122,7 +122,7 @@ class EntryFormHelper {
             ),
             title: Text(
               entry == null ? 'إضافة إدخال جديد' : 'تعديل الإدخال',
-              style: const TextStyle(
+              style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
@@ -266,12 +266,12 @@ class EntryFormHelper {
                           title: Text(
                             customer.name,
                             textAlign: TextAlign.right,
-                            style: const TextStyle(fontSize: 11),
+                            style: TextStyle(fontSize: 11),
                           ),
                           subtitle: Text(
                             'الرصيد: ${formatCurrency(balance)}',
                             textAlign: TextAlign.right,
-                            style: const TextStyle(fontSize: 9),
+                            style: TextStyle(fontSize: 9),
                           ),
                           onTap: () {
                             onSelected(customer);

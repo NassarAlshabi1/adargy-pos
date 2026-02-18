@@ -29,7 +29,7 @@ Future<void> generateAndSavePdfReport(
               const SizedBox(height: 20),
               Text(
                 'جاري إنشاء التقرير...',
-                style: const TextStyle(),
+                style: TextStyle(),
               ),
             ],
           ),
@@ -59,7 +59,7 @@ Future<void> generateAndSavePdfReport(
         SnackBar(
           content: Text(
             'حدث خطأ أثناء إنشاء التقرير: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -77,7 +77,7 @@ Future<void> viewPdf(
         appBar: AppBar(
           title: Text(
             'تقرير $customerName',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
         ),
         body: PdfPreview(
@@ -141,7 +141,7 @@ Future<void> savePdfToDownloads(BuildContext context, File pdfFile) async {
             SnackBar(
               content: Text(
                 'تم حفظ التقرير في مجلد التنزيلات',
-                style: const TextStyle(),
+                style: TextStyle(),
               ),
               backgroundColor: Colors.green,
             ),
@@ -158,7 +158,7 @@ Future<void> savePdfToDownloads(BuildContext context, File pdfFile) async {
         SnackBar(
           content: Text(
             'فشل حفظ التقرير: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -195,7 +195,7 @@ Future<bool> requestStoragePermission(BuildContext context) async {
             SnackBar(
               content: Text(
                 'يرجى تفعيل صلاحيات التخزين من إعدادات التطبيق',
-                style: const TextStyle(),
+                style: TextStyle(),
               ),
               action: SnackBarAction(
                 label: 'الإعدادات',

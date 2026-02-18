@@ -87,13 +87,13 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
                 controller: amountController,
                 keyboardType:
                     const TextInputType.numberWithOptions(decimal: true),
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 16,
                   color: textColor,
                 ),
                 decoration: InputDecoration(
                   labelText: 'المبلغ',
-                  labelStyle: const TextStyle(
+                  labelStyle: TextStyle(
                     fontSize: 16,
                     color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
                   ),
@@ -117,13 +117,13 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
               const SizedBox(height: 16),
               TextField(
                 controller: detailsController,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 16,
                   color: textColor,
                 ),
                 decoration: InputDecoration(
                   labelText: 'التفاصيل',
-                  labelStyle: const TextStyle(
+                  labelStyle: TextStyle(
                     fontSize: 16,
                     color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
                   ),
@@ -166,7 +166,7 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
                           Flexible(
                             child: Text(
                               'التاريخ: ${selectedDate.day}/${selectedDate.month}/${selectedDate.year}',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 15,
                                 color: textColor,
                               ),
@@ -275,7 +275,7 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
                               const SizedBox(width: 4),
                               Text(
                                 'له',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: isLeh
@@ -348,7 +348,7 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
                               const SizedBox(width: 4),
                               Text(
                                 'عليه',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: isAlaih
@@ -406,7 +406,7 @@ class _TransactionDialogContentState extends State<TransactionDialogContent> {
                 },
                 child: Text(
                   'حفظ',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),

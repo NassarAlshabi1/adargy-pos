@@ -25,7 +25,7 @@ class StatisticsUIComponents {
         children: [
           Text(
             'فترة التقرير',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,
               color: isDark ? Colors.white70 : Colors.black87,
@@ -74,7 +74,7 @@ class StatisticsUIComponents {
                                     children: [
                                       Text(
                                         controller.getCustomFilterText(),
-                                        style: const TextStyle(
+                                        style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 13,
@@ -84,7 +84,7 @@ class StatisticsUIComponents {
                                   )
                                 : Text(
                                     filter,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       color: isSelected
                                           ? Colors.white
                                           : (isDark
@@ -138,7 +138,7 @@ class StatisticsUIComponents {
       children: [
         Text(
           'الإحصائيات',
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
             color: isDark ? Colors.white : primaryColor,
@@ -177,7 +177,7 @@ class StatisticsUIComponents {
                 const SizedBox(width: 8),
                 Text(
                   'تقرير PDF',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
                     color: isDark ? Colors.white : Colors.white,
@@ -270,7 +270,7 @@ class StatisticsUIComponents {
       padding: const EdgeInsets.only(right: 4, bottom: 16),
       child: Text(
         title,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           color: isDark ? Colors.white : primaryColor,

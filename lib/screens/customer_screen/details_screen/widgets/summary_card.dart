@@ -77,7 +77,7 @@ class SummaryCard extends StatelessWidget {
             children: [
               Text(
                 'ملخص الحساب',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: isDark ? Colors.white : Colors.black87,
@@ -92,7 +92,7 @@ class SummaryCard extends StatelessWidget {
                 ),
                 child: Text(
                   '$transactionsCount معاملة',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: isDark ? Colors.white : Colors.black87,
@@ -109,7 +109,7 @@ class SummaryCard extends StatelessWidget {
                   if (totalBalance < 0)
                     TextSpan(
                       text: '- ',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
                         color: balanceColor,
@@ -117,7 +117,7 @@ class SummaryCard extends StatelessWidget {
                     ),
                   TextSpan(
                     text: '${totalBalance.abs().toStringAsFixed(0)} ',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                       color: balanceColor,
@@ -125,7 +125,7 @@ class SummaryCard extends StatelessWidget {
                   ),
                   TextSpan(
                     text: customerCurrency,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                       color: balanceColor,

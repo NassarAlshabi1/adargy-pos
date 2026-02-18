@@ -59,7 +59,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
                 foregroundColor: AppTheme.primaryColor,
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -90,7 +90,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
             const SizedBox(width: 20),
             Text(
               'جاري تصدير التقرير...',
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
               ),
@@ -121,7 +121,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 const SizedBox(width: 10),
                 Text(
                   'تم تصدير التقرير بنجاح',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
@@ -147,7 +147,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 Expanded(
                   child: Text(
                     'حدث خطأ أثناء تصدير التقرير: $e',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
                     ),
@@ -226,7 +226,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                       children: [
                         Text(
                           'الإجراءات', // 'Actions' in Arabic
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color:
@@ -292,7 +292,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               const SizedBox(width: 8),
               Text(
                 'التاريخ',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -309,7 +309,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 children: [
                   Text(
                     formattedDate,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color:
@@ -353,7 +353,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: Text(
                 'ملخص الإحصائيات',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -397,7 +397,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     children: [
                       Text(
                         'صافي الربح',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -417,7 +417,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             const SizedBox(width: 4),
                             Text(
                               '$profitPercentage%',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -431,7 +431,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   const SizedBox(height: 12),
                   Text(
                     formatCurrency(netProfit),
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -446,7 +446,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                           children: [
                             Text(
                               'إجمالي المبيعات',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.white.withOpacity(0.8),
                               ),
@@ -454,7 +454,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             const SizedBox(height: 4),
                             Text(
                               formatCurrency(totalAmount),
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -476,7 +476,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             children: [
                               Text(
                                 'تكلفة القطع',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 14,
                                   color: Colors.white.withOpacity(0.8),
                                 ),
@@ -484,7 +484,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                               const SizedBox(height: 4),
                               Text(
                                 formatCurrency(piecePrice),
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
@@ -562,7 +562,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   children: [
                     Text(
                       title,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 14,
                         color: isDark
                             ? Colors.white.withOpacity(0.7)
@@ -572,7 +572,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     const SizedBox(height: 4),
                     Text(
                       value,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                         color: isDark ? Colors.white : Colors.black87,
@@ -615,7 +615,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                     color: isDark
@@ -626,7 +626,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 const SizedBox(height: 4),
                 Text(
                   value,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: fullWidth ? 20 : 18,
                     fontWeight: FontWeight.bold,
                     color: color,
@@ -667,7 +667,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   children: [
                     Text(
                       'قائمة العناصر',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -675,7 +675,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     ),
                     Text(
                       '${entries.length} عنصر',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 14,
                         color: Colors.white.withOpacity(0.9),
                       ),
@@ -707,7 +707,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                       child: Center(
                         child: Text(
                           'التفاصيل',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                             color:
@@ -719,7 +719,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'المبلغ',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -730,7 +730,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'سعر القطعة',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -741,7 +741,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'الربح',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -792,7 +792,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                     flex: 2,
                                     child: Text(
                                       entry.item,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                         color: isDark
@@ -804,7 +804,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.totalAmount),
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.cyan.shade700,
                                         fontWeight: FontWeight.bold,
@@ -815,7 +815,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.piecePrice),
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.blue.shade700,
                                         fontWeight: FontWeight.bold,
@@ -826,7 +826,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.netProfit),
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 14,
                                         color: Colors.green.shade700,
                                         fontWeight: FontWeight.bold,
@@ -869,7 +869,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
           const SizedBox(height: 16),
           Text(
             'لا توجد بيانات لهذا اليوم',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
               color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
@@ -879,7 +879,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
           const SizedBox(height: 8),
           Text(
             'اضغط على زر الإضافة لإنشاء أول مدخل',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 14,
               color: isDark ? Colors.grey.shade500 : Colors.grey.shade700,
             ),

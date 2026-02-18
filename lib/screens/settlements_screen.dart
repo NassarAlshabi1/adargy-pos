@@ -75,7 +75,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
         SnackBar(
           content: Text(
             'حدث خطأ أثناء تحميل السدادات: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -92,20 +92,20 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           child: AlertDialog(
             title: Text(
               'إعادة العميل',
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             content: Text(
               'هل أنت متأكد من إعادة العميل ${customer.name} إلى قائمة العملاء؟',
-              style: const TextStyle(),
+              style: TextStyle(),
             ),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context, false),
-                child: Text('إلغاء', style: const TextStyle()),
+                child: Text('إلغاء', style: TextStyle()),
               ),
               TextButton(
                 onPressed: () => Navigator.pop(context, true),
-                child: Text('تأكيد', style: const TextStyle()),
+                child: Text('تأكيد', style: TextStyle()),
               ),
             ],
           ),
@@ -120,7 +120,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           SnackBar(
             content: Text(
               'تم إعادة العميل ${customer.name} إلى قائمة العملاء',
-              style: const TextStyle(),
+              style: TextStyle(),
             ),
             backgroundColor: Colors.green,
           ),
@@ -131,7 +131,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
         SnackBar(
           content: Text(
             'حدث خطأ أثناء إعادة العميل: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -159,7 +159,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                       const SizedBox(height: 16),
                       Text(
                         'لا توجد سدادات مسجلة',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 18,
                           color: Colors.grey.shade600,
                         ),
@@ -225,7 +225,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                           const SizedBox(width: 8),
                                           Text(
                                             'تم تسديد المبلغ  ',
-                                            style: const TextStyle(
+                                            style: TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.green.shade700,
@@ -240,7 +240,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                             DateTime.parse(
                                                 settlement['settlementDate']),
                                           ),
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                             fontSize: 12,
                                             color: Colors.grey.shade600,
                                           ),
@@ -276,7 +276,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                             const SizedBox(width: 8),
                                             Text(
                                               'اسم العميل:',
-                                              style: const TextStyle(
+                                              style: TextStyle(
                                                 fontSize: 14,
                                                 color: Colors.grey.shade600,
                                               ),
@@ -285,7 +285,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                             Expanded(
                                               child: Text(
                                                 customer.name,
-                                                style: const TextStyle(
+                                                style: TextStyle(
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.bold,
                                                 ),
@@ -305,7 +305,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                               const SizedBox(width: 8),
                                               Text(
                                                 'المبلغ المسدد:',
-                                                style: const TextStyle(
+                                                style: TextStyle(
                                                   fontSize: 14,
                                                   color: Colors.grey.shade600,
                                                 ),
@@ -313,7 +313,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                               const SizedBox(width: 8),
                                               Text(
                                                 '${settlement['settledAmount'].toStringAsFixed(0)} ${settlement['currency']}',
-                                                style: const TextStyle(
+                                                style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.green.shade700,
@@ -332,7 +332,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                             const SizedBox(width: 8),
                                             Text(
                                               'عدد المعاملات:',
-                                              style: const TextStyle(
+                                              style: TextStyle(
                                                 fontSize: 14,
                                                 color: Colors.grey.shade600,
                                               ),
@@ -340,7 +340,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                             const SizedBox(width: 8),
                                             Text(
                                               '${customer.transactions.length}',
-                                              style: const TextStyle(
+                                              style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
                                               ),
@@ -366,7 +366,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                         label: Text(
                                           'حذف نهائي',
                                           style:
-                                              const TextStyle(fontSize: 12),
+                                              TextStyle(fontSize: 12),
                                         ),
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors.red.shade600,
@@ -389,7 +389,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                                         label: Text(
                                           'إعادة للعملاء',
                                           style:
-                                              const TextStyle(fontSize: 12),
+                                              TextStyle(fontSize: 12),
                                         ),
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor:
@@ -441,7 +441,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
               Expanded(
                 child: Text(
                   'تفاصيل العميل المسدد',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
@@ -506,7 +506,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                           padding: const EdgeInsets.only(top: 8),
                           child: Text(
                             'وعدد ${customer.transactions.length - 5} معاملة أخرى...',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey.shade600,
                               fontStyle: FontStyle.italic,
@@ -535,7 +535,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                       icon: const Icon(Icons.undo, size: 16),
                       label: Text(
                         'إعادة للعملاء',
-                        style: const TextStyle(fontSize: 12),
+                        style: TextStyle(fontSize: 12),
                       ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange.shade600,
@@ -551,7 +551,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                       icon: const Icon(Icons.delete, size: 16),
                       label: Text(
                         'حذف نهائي',
-                        style: const TextStyle(fontSize: 12),
+                        style: TextStyle(fontSize: 12),
                       ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.red.shade600,
@@ -566,7 +566,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                     onPressed: () => Navigator.pop(context),
                     child: Text(
                       'إغلاق',
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: Colors.grey.shade600,
                       ),
                     ),
@@ -589,16 +589,16 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           child: AlertDialog(
             title: Text(
               'حذف العميل نهائياً',
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             content: Text(
               'هل أنت متأكد من حذف العميل ${customer.name} نهائياً؟\n\nسيتم حذف:\n• بيانات العميل\n• جميع المعاملات\n• سجل السداد\n\nلا يمكن التراجع عن هذه العملية.',
-              style: const TextStyle(),
+              style: TextStyle(),
             ),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context, false),
-                child: Text('إلغاء', style: const TextStyle()),
+                child: Text('إلغاء', style: TextStyle()),
               ),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context, true),
@@ -606,7 +606,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                   backgroundColor: Colors.red.shade600,
                   foregroundColor: Colors.white,
                 ),
-                child: Text('حذف نهائي', style: const TextStyle()),
+                child: Text('حذف نهائي', style: TextStyle()),
               ),
             ],
           ),
@@ -624,7 +624,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           SnackBar(
             content: Text(
               'تم حذف العميل ${customer.name} وجميع بياناته نهائياً',
-              style: const TextStyle(),
+              style: TextStyle(),
             ),
             backgroundColor: Colors.red.shade600,
           ),
@@ -635,7 +635,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
         SnackBar(
           content: Text(
             'حدث خطأ أثناء حذف العميل: $e',
-            style: const TextStyle(),
+            style: TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -675,7 +675,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
                 const SizedBox(width: 8),
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: color,
@@ -701,7 +701,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
             width: 100,
             child: Text(
               label,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 14,
                 color: Colors.grey.shade600,
               ),
@@ -710,7 +710,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           Expanded(
             child: Text(
               value,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
               ),
@@ -744,7 +744,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
               Expanded(
                 child: Text(
                   _processMixedText(transaction.item),
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w500,
                   ),
@@ -752,7 +752,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
               ),
               Text(
                 '${transaction.isCredit ? '+ ' : '- '}${transaction.amount.toStringAsFixed(0)} ${transaction.currency}',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
                   color: transaction.isCredit
@@ -765,7 +765,7 @@ class _SettlementsScreenState extends State<SettlementsScreen> {
           const SizedBox(height: 4),
           Text(
             DateFormat('yyyy/MM/dd').format(transaction.date),
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 11,
               color: Colors.grey.shade600,
             ),

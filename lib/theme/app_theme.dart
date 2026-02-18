@@ -67,7 +67,7 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: primaryColor,
       foregroundColor: Colors.white,
-      titleTextStyle: const TextStyle(
+      titleTextStyle: TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.bold,
         color: Colors.white,
@@ -82,7 +82,7 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -96,7 +96,7 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -108,7 +108,7 @@ class AppTheme {
         foregroundColor: primaryColor,
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -147,46 +147,46 @@ class AppTheme {
         borderRadius: mediumRadius,
         borderSide: const BorderSide(color: dangerColor, width: 1.0),
       ),
-      labelStyle: const TextStyle(color: lightSecondaryTextColor),
+      labelStyle: TextStyle(color: lightSecondaryTextColor),
       hintStyle: TextStyle(color: lightSecondaryTextColor.withOpacity(0.7)),
     ),
     textTheme: TextTheme(
-      displayLarge: const TextStyle(
+      displayLarge: TextStyle(
         color: lightTextColor,
         fontSize: 32,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      displayMedium: const TextStyle(
+      displayMedium: TextStyle(
         color: lightTextColor,
         fontSize: 28,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      displaySmall: const TextStyle(
+      displaySmall: TextStyle(
         color: lightTextColor,
         fontSize: 24,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      headlineMedium: const TextStyle(
+      headlineMedium: TextStyle(
         color: lightTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      titleLarge: const TextStyle(
+      titleLarge: TextStyle(
         color: lightTextColor,
         fontSize: 18,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      bodyLarge: const TextStyle(
+      bodyLarge: TextStyle(
         color: lightTextColor,
         fontSize: 16,
         fontFamily: 'Roboto',
       ),
-      bodyMedium: const TextStyle(
+      bodyMedium: TextStyle(
         color: lightTextColor,
         fontSize: 14,
         fontFamily: 'Roboto',
@@ -198,12 +198,12 @@ class AppTheme {
       unselectedItemColor: lightSecondaryTextColor,
       type: BottomNavigationBarType.fixed,
       elevation: largeElevation,
-      selectedLabelStyle: const TextStyle(
+      selectedLabelStyle: TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      unselectedLabelStyle: const TextStyle(
+      unselectedLabelStyle: TextStyle(
         fontSize: 12,
         fontFamily: 'Roboto',
       ),
@@ -213,7 +213,7 @@ class AppTheme {
     ),
     snackBarTheme: SnackBarThemeData(
       backgroundColor: primaryColor,
-      contentTextStyle: const TextStyle(
+      contentTextStyle: TextStyle(
         color: Colors.white,
         fontSize: 14,
         fontFamily: 'Roboto',
@@ -225,13 +225,13 @@ class AppTheme {
       backgroundColor: lightCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-      titleTextStyle: const TextStyle(
+      titleTextStyle: TextStyle(
         color: lightTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      contentTextStyle: const TextStyle(
+      contentTextStyle: TextStyle(
         color: lightTextColor,
         fontSize: 16,
         fontFamily: 'Roboto',
@@ -261,7 +261,7 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: darkCardColor,
       foregroundColor: darkTextColor,
-      titleTextStyle: const TextStyle(
+      titleTextStyle: TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.bold,
         color: darkTextColor,
@@ -276,7 +276,7 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -290,7 +290,7 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -302,7 +302,7 @@ class AppTheme {
         foregroundColor: primaryColor,
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
           fontFamily: 'Roboto',
@@ -341,46 +341,46 @@ class AppTheme {
         borderRadius: mediumRadius,
         borderSide: const BorderSide(color: dangerColor, width: 1.0),
       ),
-      labelStyle: const TextStyle(color: darkSecondaryTextColor),
+      labelStyle: TextStyle(color: darkSecondaryTextColor),
       hintStyle: TextStyle(color: darkSecondaryTextColor.withOpacity(0.7)),
     ),
     textTheme: TextTheme(
-      displayLarge: const TextStyle(
+      displayLarge: TextStyle(
         color: darkTextColor,
         fontSize: 32,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      displayMedium: const TextStyle(
+      displayMedium: TextStyle(
         color: darkTextColor,
         fontSize: 28,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      displaySmall: const TextStyle(
+      displaySmall: TextStyle(
         color: darkTextColor,
         fontSize: 24,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      headlineMedium: const TextStyle(
+      headlineMedium: TextStyle(
         color: darkTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      titleLarge: const TextStyle(
+      titleLarge: TextStyle(
         color: darkTextColor,
         fontSize: 18,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      bodyLarge: const TextStyle(
+      bodyLarge: TextStyle(
         color: darkTextColor,
         fontSize: 16,
         fontFamily: 'Roboto',
       ),
-      bodyMedium: const TextStyle(
+      bodyMedium: TextStyle(
         color: darkTextColor,
         fontSize: 14,
         fontFamily: 'Roboto',
@@ -392,11 +392,11 @@ class AppTheme {
       unselectedItemColor: darkSecondaryTextColor,
       type: BottomNavigationBarType.fixed,
       elevation: largeElevation,
-      selectedLabelStyle: const TextStyle(
+      selectedLabelStyle: TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.bold,
       ),
-      unselectedLabelStyle: const TextStyle(
+      unselectedLabelStyle: TextStyle(
         fontSize: 12,
       ),
     ),
@@ -405,7 +405,7 @@ class AppTheme {
     ),
     snackBarTheme: SnackBarThemeData(
       backgroundColor: darkCardColor,
-      contentTextStyle: const TextStyle(
+      contentTextStyle: TextStyle(
         color: darkTextColor,
         fontSize: 14,
         fontFamily: 'Roboto',
@@ -417,13 +417,13 @@ class AppTheme {
       backgroundColor: darkCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-      titleTextStyle: const TextStyle(
+      titleTextStyle: TextStyle(
         color: darkTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
         fontFamily: 'Roboto',
       ),
-      contentTextStyle: const TextStyle(
+      contentTextStyle: TextStyle(
         color: darkTextColor,
         fontSize: 16,
         fontFamily: 'Roboto',

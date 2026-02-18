@@ -94,7 +94,7 @@ class ReportsScreen extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: const TextStyle(color: Colors.white),
+        style: TextStyle(color: Colors.white),
       ),
     );
   }
@@ -108,12 +108,12 @@ class ReportsScreen extends StatelessWidget {
           children: [
             Text(
               label,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
             Text(
               '${value.toStringAsFixed(2)} ريال',
-              style: const TextStyle(fontSize: 14, color: Colors.green),
+              style: TextStyle(fontSize: 14, color: Colors.green),
             ),
           ],
         ),

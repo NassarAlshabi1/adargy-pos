@@ -27,7 +27,7 @@ Future<void> showPdfOptionsDialog(
             children: [
               Text(
                 'تم إنشاء التقرير بنجاح',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
@@ -35,7 +35,7 @@ Future<void> showPdfOptionsDialog(
               const SizedBox(height: 20),
               Text(
                 'ماذا تريد أن تفعل بالتقرير؟',
-                style: const TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 20),
               Row(
@@ -48,7 +48,7 @@ Future<void> showPdfOptionsDialog(
                       viewPdf(pdfFile);
                     },
                     icon: const Icon(Icons.visibility),
-                    label: Text('عرض', style: const TextStyle()),
+                    label: Text('عرض', style: TextStyle()),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                       foregroundColor: Colors.white,
@@ -63,7 +63,7 @@ Future<void> showPdfOptionsDialog(
                       printPdf(pdfFile);
                     },
                     icon: const Icon(Icons.print),
-                    label: Text('طباعة', style: const TextStyle()),
+                    label: Text('طباعة', style: TextStyle()),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
@@ -78,7 +78,7 @@ Future<void> showPdfOptionsDialog(
                       savePdf(pdfFile);
                     },
                     icon: const Icon(Icons.save_alt),
-                    label: Text('حفظ', style: const TextStyle()),
+                    label: Text('حفظ', style: TextStyle()),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orange,
                       foregroundColor: Colors.white,

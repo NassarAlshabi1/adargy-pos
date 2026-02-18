@@ -63,7 +63,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         appBar: AppBar(
           title: Text(
             'الإعدادات',
-            style: const TextStyle(
+            style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -82,7 +82,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   if (showPercentageSettings) ...[
                     Text(
                       'إعدادات الحسابات',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -113,7 +113,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 const SizedBox(width: 8),
                                 Text(
                                   'نسبة المهندس',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -125,7 +125,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             const SizedBox(height: 12),
                             Text(
                               'أدخل النسبة المئوية لربح المهندس. سيتم استخدام هذه النسبة لجميع الإدخالات الجديدة.',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 14,
                                 color: isDark ? Colors.white70 : Colors.black54,
                               ),
@@ -170,7 +170,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                       SnackBar(
                                         content: Text(
                                           'تم حفظ نسبة المهندس بنجاح',
-                                          style: const TextStyle(),
+                                          style: TextStyle(),
                                           textAlign: TextAlign.center,
                                         ),
                                         backgroundColor: Colors.green.shade600,
@@ -182,7 +182,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 icon: const Icon(Icons.save_alt_outlined),
                                 label: Text(
                                   'حفظ النسبة',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -211,7 +211,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   if (showAppearanceSettings) ...[
                     Text(
                       'إعدادات المظهر',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -242,7 +242,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 const SizedBox(width: 8),
                                 Text(
                                   'وضع التطبيق',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -256,7 +256,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               isDark
                                   ? 'التطبيق حاليًا في الوضع الداكن.'
                                   : 'التطبيق حاليًا في الوضع الفاتح.',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 14,
                                 color: isDark ? Colors.white70 : Colors.black54,
                               ),
@@ -274,7 +274,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   isDark
                                       ? 'التحويل إلى الوضع الفاتح'
                                       : 'التحويل إلى الوضع الداكن',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),

@@ -97,7 +97,7 @@ class CustomTextField extends StatelessWidget {
       initialValue: initialValue,
       textDirection: textDirection ?? TextDirection.rtl,
       textAlign: TextAlign.right,
-      style: const TextStyle(
+      style: TextStyle(
         color: isDark ? AppTheme.darkTextColor : AppTheme.lightTextColor,
         fontSize: 16,
       ),
@@ -152,19 +152,19 @@ class CustomTextField extends StatelessWidget {
         prefixText: prefixText,
         suffixText: suffixText,
         errorText: errorText,
-        labelStyle: const TextStyle(
+        labelStyle: TextStyle(
           color: isDark
               ? AppTheme.darkSecondaryTextColor
               : AppTheme.lightSecondaryTextColor,
           fontSize: 16,
         ),
-        hintStyle: const TextStyle(
+        hintStyle: TextStyle(
           color: isDark
               ? AppTheme.darkSecondaryTextColor.withOpacity(0.7)
               : AppTheme.lightSecondaryTextColor.withOpacity(0.7),
           fontSize: 14,
         ),
-        errorStyle: const TextStyle(
+        errorStyle: TextStyle(
           color: AppTheme.dangerColor,
           fontSize: 12,
         ),
