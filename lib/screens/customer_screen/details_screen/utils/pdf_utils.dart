@@ -30,7 +30,7 @@ Future<void> generateAndSavePdfReport(
               const SizedBox(height: 20),
               Text(
                 'جاري إنشاء التقرير...',
-                style: GoogleFonts.cairo(),
+                style: const TextStyle(),
               ),
             ],
           ),
@@ -60,7 +60,7 @@ Future<void> generateAndSavePdfReport(
         SnackBar(
           content: Text(
             'حدث خطأ أثناء إنشاء التقرير: $e',
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -78,7 +78,7 @@ Future<void> viewPdf(
         appBar: AppBar(
           title: Text(
             'تقرير $customerName',
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(),
           ),
         ),
         body: PdfPreview(
@@ -142,7 +142,7 @@ Future<void> savePdfToDownloads(BuildContext context, File pdfFile) async {
             SnackBar(
               content: Text(
                 'تم حفظ التقرير في مجلد التنزيلات',
-                style: GoogleFonts.cairo(),
+                style: const TextStyle(),
               ),
               backgroundColor: Colors.green,
             ),
@@ -159,7 +159,7 @@ Future<void> savePdfToDownloads(BuildContext context, File pdfFile) async {
         SnackBar(
           content: Text(
             'فشل حفظ التقرير: $e',
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),
@@ -196,7 +196,7 @@ Future<bool> requestStoragePermission(BuildContext context) async {
             SnackBar(
               content: Text(
                 'يرجى تفعيل صلاحيات التخزين من إعدادات التطبيق',
-                style: GoogleFonts.cairo(),
+                style: const TextStyle(),
               ),
               action: SnackBarAction(
                 label: 'الإعدادات',

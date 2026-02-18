@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'dart:convert';
@@ -205,22 +204,22 @@ class _MainScreenState extends State<MainScreen>
         builder: (context) => AlertDialog(
           title: Text(
             'تأكيد استعادة البيانات',
-            style: GoogleFonts.cairo(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontFamily: 'Arial', fontWeight: FontWeight.bold),
             textAlign: TextAlign.right,
           ),
           content: Text(
             'سيتم استبدال جميع البيانات الحالية (الإدخالات، العملاء، المعاملات، السدادات) بالنسخة الاحتياطية المختارة. هل أنت متأكد من المتابعة؟',
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(fontFamily: 'Arial'),
             textDirection: ui.TextDirection.rtl,
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: Text('إلغاء', style: GoogleFonts.cairo()),
+              child: Text('إلغاء', style: const TextStyle(fontFamily: 'Arial')),
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, true),
-              child: Text('استعادة', style: GoogleFonts.cairo()),
+              child: Text('استعادة', style: const TextStyle(fontFamily: 'Arial')),
             ),
           ],
           actionsAlignment: MainAxisAlignment.spaceBetween,
@@ -334,9 +333,10 @@ class _MainScreenState extends State<MainScreen>
             const SizedBox(width: 10),
             Text(
               message,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
+                fontFamily: 'Arial',
               ),
             ),
           ],
@@ -401,7 +401,7 @@ class _MainScreenState extends State<MainScreen>
   //       child: TextField(
   //         controller: _searchController,
   //         textDirection: ui.TextDirection.rtl,
-  //         style: GoogleFonts.cairo(),
+  //         style: const TextStyle(),
   //         decoration: InputDecoration(
   //           hintText: 'بحث...',
   //           hintTextDirection: ui.TextDirection.rtl,
@@ -541,18 +541,20 @@ class _MainScreenState extends State<MainScreen>
               children: [
                 Text(
                   'دفتر مهندس',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontFamily: 'Arial',
                   ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   'إدارة العملاء والتقارير اليومية',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 14,
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white,
+                    fontFamily: 'Arial',
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -577,7 +579,7 @@ class _MainScreenState extends State<MainScreen>
       ),
       title: Text(
         title,
-        style: GoogleFonts.cairo(
+        style: const TextStyle(
           fontSize: 15,
           fontWeight: FontWeight.w500,
           color: isDark ? Colors.white : Colors.grey.shade800,
@@ -695,11 +697,12 @@ class _MainScreenState extends State<MainScreen>
                 const SizedBox(height: 4),
                 Text(
                   item.label,
-                  style: GoogleFonts.cairo(
+                  style: TextStyle(
                     color: isSelected ? activeColor : inactiveColor,
                     fontSize: 12,
                     fontWeight:
                         isSelected ? FontWeight.bold : FontWeight.normal,
+                    fontFamily: 'Arial',
                   ),
                 ),
               ],
@@ -724,7 +727,7 @@ class _MainScreenState extends State<MainScreen>
         ),
         title: Text(
           'حول التطبيق',
-          style: GoogleFonts.cairo(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: isDark ? Colors.white : Colors.grey.shade800,
           ),
@@ -751,19 +754,21 @@ class _MainScreenState extends State<MainScreen>
               const SizedBox(height: 16),
               Text(
                 'دفتر مهندس',
-                style: GoogleFonts.cairo(
+                style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primaryColor,
+                  fontFamily: 'Arial',
                 ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
               Text(
                 'تطبيق لإدارة العملاء والتقارير اليومية',
-                style: GoogleFonts.cairo(
+                style: TextStyle(
                   fontSize: 16,
                   color: isDark ? Colors.white : Colors.grey.shade800,
+                  fontFamily: 'Arial',
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -807,7 +812,7 @@ class _MainScreenState extends State<MainScreen>
               ),
               child: Text(
                 'موافق',
-                style: GoogleFonts.cairo(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -832,7 +837,7 @@ class _DrawerSectionTitle extends StatelessWidget {
       padding: const EdgeInsets.only(right: 16, left: 16, top: 16, bottom: 8),
       child: Text(
         title,
-        style: GoogleFonts.cairo(
+        style: const TextStyle(
           fontSize: 12,
           fontWeight: FontWeight.bold,
           color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
@@ -853,11 +858,12 @@ class _AppVersion extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       child: Text(
         'الإصدار ${_MainScreenState.appVersion}',
-        style: GoogleFonts.cairo(
+        style: TextStyle(
           color: isDark
               ? AppTheme.darkSecondaryTextColor
               : AppTheme.lightSecondaryTextColor,
           fontSize: 12,
+          fontFamily: 'Arial',
         ),
         textAlign: TextAlign.center,
       ),
@@ -898,7 +904,7 @@ class _AboutInfoItem extends StatelessWidget {
             const SizedBox(width: 8),
             Text(
               value,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: isDark ? Colors.white : Colors.grey.shade800,
@@ -908,7 +914,7 @@ class _AboutInfoItem extends StatelessWidget {
             const Spacer(),
             Text(
               '$label ',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
                 color: isDark

@@ -2,7 +2,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 import '../../models/entry.dart';
@@ -60,7 +59,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
                 foregroundColor: AppTheme.primaryColor,
-                textStyle: GoogleFonts.cairo(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -91,7 +90,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
             const SizedBox(width: 20),
             Text(
               'جاري تصدير التقرير...',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
               ),
@@ -122,7 +121,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 const SizedBox(width: 10),
                 Text(
                   'تم تصدير التقرير بنجاح',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                   ),
@@ -148,7 +147,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 Expanded(
                   child: Text(
                     'حدث خطأ أثناء تصدير التقرير: $e',
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
                     ),
@@ -227,7 +226,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                       children: [
                         Text(
                           'الإجراءات', // 'Actions' in Arabic
-                          style: GoogleFonts.cairo(
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color:
@@ -293,7 +292,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               const SizedBox(width: 8),
               Text(
                 'التاريخ',
-                style: GoogleFonts.cairo(
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -310,7 +309,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 children: [
                   Text(
                     formattedDate,
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color:
@@ -354,7 +353,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: Text(
                 'ملخص الإحصائيات',
-                style: GoogleFonts.cairo(
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -398,7 +397,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     children: [
                       Text(
                         'صافي الربح',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -418,7 +417,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             const SizedBox(width: 4),
                             Text(
                               '$profitPercentage%',
-                              style: GoogleFonts.cairo(
+                              style: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -432,7 +431,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   const SizedBox(height: 12),
                   Text(
                     formatCurrency(netProfit),
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -447,7 +446,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                           children: [
                             Text(
                               'إجمالي المبيعات',
-                              style: GoogleFonts.cairo(
+                              style: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white.withOpacity(0.8),
                               ),
@@ -455,7 +454,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             const SizedBox(height: 4),
                             Text(
                               formatCurrency(totalAmount),
-                              style: GoogleFonts.cairo(
+                              style: const TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -477,7 +476,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                             children: [
                               Text(
                                 'تكلفة القطع',
-                                style: GoogleFonts.cairo(
+                                style: const TextStyle(
                                   fontSize: 14,
                                   color: Colors.white.withOpacity(0.8),
                                 ),
@@ -485,7 +484,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                               const SizedBox(height: 4),
                               Text(
                                 formatCurrency(piecePrice),
-                                style: GoogleFonts.cairo(
+                                style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
@@ -563,7 +562,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   children: [
                     Text(
                       title,
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 14,
                         color: isDark
                             ? Colors.white.withOpacity(0.7)
@@ -573,7 +572,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     const SizedBox(height: 4),
                     Text(
                       value,
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                         color: isDark ? Colors.white : Colors.black87,
@@ -616,7 +615,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
               children: [
                 Text(
                   title,
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                     color: isDark
@@ -627,7 +626,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                 const SizedBox(height: 4),
                 Text(
                   value,
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: fullWidth ? 20 : 18,
                     fontWeight: FontWeight.bold,
                     color: color,
@@ -668,7 +667,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                   children: [
                     Text(
                       'قائمة العناصر',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -676,7 +675,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     ),
                     Text(
                       '${entries.length} عنصر',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 14,
                         color: Colors.white.withOpacity(0.9),
                       ),
@@ -708,7 +707,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                       child: Center(
                         child: Text(
                           'التفاصيل',
-                          style: GoogleFonts.cairo(
+                          style: const TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                             color:
@@ -720,7 +719,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'المبلغ',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -731,7 +730,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'سعر القطعة',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -742,7 +741,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                     Expanded(
                       child: Text(
                         'الربح',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : AppTheme.primaryColor,
@@ -793,7 +792,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                     flex: 2,
                                     child: Text(
                                       entry.item,
-                                      style: GoogleFonts.cairo(
+                                      style: const TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                         color: isDark
@@ -805,7 +804,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.totalAmount),
-                                      style: GoogleFonts.notoSansArabic(
+                                      style: const TextStyle(
                                         fontSize: 14,
                                         color: Colors.cyan.shade700,
                                         fontWeight: FontWeight.bold,
@@ -816,7 +815,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.piecePrice),
-                                      style: GoogleFonts.notoSansArabic(
+                                      style: const TextStyle(
                                         fontSize: 14,
                                         color: Colors.blue.shade700,
                                         fontWeight: FontWeight.bold,
@@ -827,7 +826,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
                                   Expanded(
                                     child: Text(
                                       formatCurrency(entry.netProfit),
-                                      style: GoogleFonts.cairo(
+                                      style: const TextStyle(
                                         fontSize: 14,
                                         color: Colors.green.shade700,
                                         fontWeight: FontWeight.bold,
@@ -870,7 +869,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
           const SizedBox(height: 16),
           Text(
             'لا توجد بيانات لهذا اليوم',
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
               color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
@@ -880,7 +879,7 @@ class _DailyReportsScreenState extends State<DailyReportsScreen> {
           const SizedBox(height: 8),
           Text(
             'اضغط على زر الإضافة لإنشاء أول مدخل',
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 14,
               color: isDark ? Colors.grey.shade500 : Colors.grey.shade700,
             ),

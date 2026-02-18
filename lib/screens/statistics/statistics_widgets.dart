@@ -59,7 +59,7 @@ class StatisticsWidgets {
                     const SizedBox(width: 10),
                     Text(
                       'إحصائيات العملاء',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: textColor,
@@ -85,7 +85,7 @@ class StatisticsWidgets {
                       const SizedBox(width: 6),
                       Text(
                         'العدد: ${customers.length}',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: secondaryColor,
@@ -116,7 +116,7 @@ class StatisticsWidgets {
                     const SizedBox(height: 16),
                     Text(
                       'جاري تحميل بيانات العملاء...',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 14,
                         color: isDark ? Colors.grey : Colors.grey.shade600,
                       ),
@@ -140,7 +140,7 @@ class StatisticsWidgets {
                     const SizedBox(height: 16),
                     Text(
                       'لا يوجد بيانات للعملاء',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 16,
                         color: isDark ? Colors.grey : Colors.grey.shade700,
                       ),
@@ -161,7 +161,7 @@ class StatisticsWidgets {
                         horizontal: 16.0, vertical: 8.0),
                     child: Text(
                       'العملاء الأكثر نشاطًا',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                         color: isDark ? Colors.white70 : Colors.grey.shade800,
@@ -242,7 +242,7 @@ class StatisticsWidgets {
                 alignment: Alignment.center,
                 child: Text(
                   '${index + 1}',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
@@ -262,7 +262,7 @@ class StatisticsWidgets {
                         // اسم العميل
                         Text(
                           customer.name,
-                          style: GoogleFonts.cairo(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                             color: textColor,
@@ -282,7 +282,7 @@ class StatisticsWidgets {
                             const SizedBox(width: 4),
                             Text(
                               transactionCount.toString(),
-                              style: GoogleFonts.cairo(
+                              style: const TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 14,
                                 color: isDark
@@ -312,7 +312,7 @@ class StatisticsWidgets {
                             const SizedBox(width: 4),
                             Text(
                               '${balance.toStringAsFixed(0)} ر.ي',
-                              style: GoogleFonts.cairo(
+                              style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14,
                                 color: isPositiveBalance
@@ -327,7 +327,7 @@ class StatisticsWidgets {
                         if (lastTx != null)
                           Text(
                             'آخر معاملة: ${DateFormat('dd/MM', 'ar').format(lastTx)}',
-                            style: GoogleFonts.cairo(
+                            style: const TextStyle(
                               fontSize: 13,
                               color: isDark
                                   ? Colors.grey.shade400
@@ -359,7 +359,7 @@ class StatisticsWidgets {
         alignment: Alignment.center,
         child: Text(
           'لا توجد بيانات لعرضها',
-          style: GoogleFonts.cairo(fontSize: 16),
+          style: const TextStyle(fontSize: 16),
         ),
       );
     }
@@ -403,7 +403,7 @@ class StatisticsWidgets {
         children: [
           Text(
             'تطور الأرباح والمبيعات',
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
               color: isDark ? Colors.white : Colors.black87,
@@ -530,7 +530,7 @@ class StatisticsWidgets {
         const SizedBox(width: 4),
         Text(
           label,
-          style: GoogleFonts.cairo(
+          style: const TextStyle(
             fontSize: 12,
             color: isDark ? Colors.grey[300] : Colors.grey[800],
           ),
@@ -576,7 +576,7 @@ class StatisticsWidgets {
               children: [
                 Text(
                   'صافي الربح',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -599,7 +599,7 @@ class StatisticsWidgets {
                       const SizedBox(width: 4),
                       Text(
                         '$profitPercentage%',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -613,7 +613,7 @@ class StatisticsWidgets {
             const SizedBox(height: 16),
             Text(
               '${numberFormat.format(totalNetProfit)} ج.م',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -628,7 +628,7 @@ class StatisticsWidgets {
                   children: [
                     Text(
                       'إجمالي المبالغ',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 14,
                         color: Colors.white.withOpacity(0.8),
                       ),
@@ -636,7 +636,7 @@ class StatisticsWidgets {
                     const SizedBox(height: 4),
                     Text(
                       '${numberFormat.format(totalAmount)} ج.م',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -699,7 +699,7 @@ class StatisticsWidgets {
             const SizedBox(height: 12),
             Text(
               label,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: isDark ? Colors.white70 : Colors.black87,
@@ -712,7 +712,7 @@ class StatisticsWidgets {
                 isCount
                     ? numberFormat.format(value.toInt())
                     : '${numberFormat.format(value)} ج.م',
-                style: GoogleFonts.cairo(
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: color,

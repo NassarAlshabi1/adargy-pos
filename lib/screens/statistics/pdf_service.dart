@@ -352,11 +352,11 @@ class PdfService {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('تم إنشاء التقرير بنجاح',
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 20),
                 Text('ماذا تريد أن تفعل بالتقرير؟',
-                    style: GoogleFonts.cairo(fontSize: 16)),
+                    style: const TextStyle(fontSize: 16)),
                 const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -367,7 +367,7 @@ class PdfService {
                         _viewPdf(context, pdfFile);
                       },
                       icon: const Icon(Icons.visibility),
-                      label: Text('عرض', style: GoogleFonts.cairo()),
+                      label: Text('عرض', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
@@ -379,7 +379,7 @@ class PdfService {
                         _printPdf(pdfFile);
                       },
                       icon: const Icon(Icons.print),
-                      label: Text('طباعة', style: GoogleFonts.cairo()),
+                      label: Text('طباعة', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         foregroundColor: Colors.white,
@@ -391,7 +391,7 @@ class PdfService {
                         _savePdf(context, pdfFile, filterType);
                       },
                       icon: const Icon(Icons.save_alt),
-                      label: Text('حفظ', style: GoogleFonts.cairo()),
+                      label: Text('حفظ', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         foregroundColor: Colors.white,
@@ -452,7 +452,7 @@ class PdfService {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('تم حفظ التقرير بنجاح في المجلد المحدد',
-                style: GoogleFonts.cairo()),
+                style: const TextStyle()),
             backgroundColor: Colors.green,
           ),
         );
@@ -460,7 +460,7 @@ class PdfService {
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('فشل حفظ التقرير: $e', style: GoogleFonts.cairo()),
+          content: Text('فشل حفظ التقرير: $e', style: const TextStyle()),
           backgroundColor: Colors.red,
         ),
       );

@@ -54,7 +54,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           const SizedBox(width: 10),
           Text(
             title,
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
               color: isDarkMode ? Colors.white : Colors.white,

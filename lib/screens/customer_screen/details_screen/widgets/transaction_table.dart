@@ -106,7 +106,7 @@ class TransactionTable extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         child: Text(
           text,
-          style: GoogleFonts.cairo(
+          style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: 16,
@@ -171,7 +171,7 @@ class TransactionTable extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Text(
             text,
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               color: color ?? (isDark ? Colors.white : Colors.black87),
               fontWeight: fontWeight ?? FontWeight.bold,
               fontSize: 12,
@@ -193,7 +193,7 @@ class TransactionTable extends StatelessWidget {
           child: ListTile(
             leading: Icon(Icons.edit, color: Colors.blue.shade700),
             title: Text('تعديل',
-                style: GoogleFonts.cairo(fontWeight: FontWeight.w600)),
+                style: const TextStyle(fontWeight: FontWeight.w600)),
           ),
         ),
         PopupMenuItem(
@@ -201,7 +201,7 @@ class TransactionTable extends StatelessWidget {
           child: ListTile(
             leading: Icon(Icons.delete, color: Colors.red.shade700),
             title: Text('حذف',
-                style: GoogleFonts.cairo(fontWeight: FontWeight.w600)),
+                style: const TextStyle(fontWeight: FontWeight.w600)),
           ),
         ),
       ],

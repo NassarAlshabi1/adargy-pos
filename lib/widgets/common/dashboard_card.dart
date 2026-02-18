@@ -84,20 +84,22 @@ class DashboardCard extends StatelessWidget {
               const SizedBox(height: 16),
               Text(
                 value,
-                style: GoogleFonts.cairo(
+                style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: valueTextColor,
+                  fontFamily: 'Arial',
                 ),
               ),
               const SizedBox(height: 4),
               Text(
                 title,
-                style: GoogleFonts.cairo(
+                style: TextStyle(
                   fontSize: 14,
                   color: isDark
                       ? AppTheme.darkSecondaryTextColor
                       : AppTheme.lightSecondaryTextColor,
+                  fontFamily: 'Arial',
                 ),
               ),
             ],

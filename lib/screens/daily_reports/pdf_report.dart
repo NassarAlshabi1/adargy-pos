@@ -72,7 +72,7 @@ class PdfReport {
                 const SizedBox(height: 16),
                 Text(
                   'جاري إنشاء التقرير...',
-                  style: GoogleFonts.cairo(),
+                  style: const TextStyle(),
                 )
               ],
             ),
@@ -549,7 +549,7 @@ class PdfReport {
               children: [
                 Text(
                   'تم إنشاء التقرير بنجاح',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -557,7 +557,7 @@ class PdfReport {
                 const SizedBox(height: 20),
                 Text(
                   'ماذا تريد أن تفعل بالتقرير؟',
-                  style: GoogleFonts.cairo(fontSize: 16),
+                  style: const TextStyle(fontSize: 16),
                 ),
                 const SizedBox(height: 20),
                 Row(
@@ -570,7 +570,7 @@ class PdfReport {
                         _viewPdf(context, pdfFile);
                       },
                       icon: const Icon(Icons.visibility),
-                      label: Text('عرض', style: GoogleFonts.cairo()),
+                      label: Text('عرض', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
@@ -585,7 +585,7 @@ class PdfReport {
                         _printPdf(context, pdfFile);
                       },
                       icon: const Icon(Icons.print),
-                      label: Text('طباعة', style: GoogleFonts.cairo()),
+                      label: Text('طباعة', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         foregroundColor: Colors.white,
@@ -600,7 +600,7 @@ class PdfReport {
                         _savePdf(context, pdfFile);
                       },
                       icon: const Icon(Icons.save_alt),
-                      label: Text('حفظ', style: GoogleFonts.cairo()),
+                      label: Text('حفظ', style: const TextStyle()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         foregroundColor: Colors.white,
@@ -627,7 +627,7 @@ class PdfReport {
             appBar: AppBar(
               title: Text(
                 'التقرير اليومي',
-                style: GoogleFonts.cairo(),
+                style: const TextStyle(),
               ),
             ),
             body: PdfPreview(

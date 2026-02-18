@@ -3,7 +3,6 @@ import 'dart:ui' as ui;
 import 'package:daily/database/customer_database_helper.dart';
 import 'package:daily/models/customer.dart';
 import 'package:intl/intl.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'details_screen/customer_detail_screen.dart';
 
@@ -357,7 +356,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
             const SizedBox(width: 4),
             Text(
               label,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 color: isActive
                     ? Colors.white
                     : (isDark ? Colors.grey.shade400 : Colors.grey.shade700),
@@ -401,7 +400,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                 size: 16,
                 color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
               ),
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.normal,
                 color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
@@ -412,7 +411,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                   value: currency,
                   child: Text(
                     currency,
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.normal,
                     ),
@@ -463,7 +462,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                       const SizedBox(height: 16),
                       Text(
                         'لا يوجد عملاء حتى الآن',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: nameFontSize,
                           color: isDark
                               ? Colors.grey.shade400
@@ -476,7 +475,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                         icon: const Icon(Icons.add),
                         label: Text(
                           'إضافة عميل جديد',
-                          style: GoogleFonts.cairo(),
+                          style: const TextStyle(),
                         ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: accentColor,
@@ -521,7 +520,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                       _isSearching
                                           ? 'نتائج البحث: ${_filteredCustomers.length}'
                                           : 'عدد العملاء: ${_customers.length}',
-                                      style: GoogleFonts.cairo(
+                                      style: const TextStyle(
                                         fontSize: detailFontSize,
                                         fontWeight: FontWeight.bold,
                                         color: isDark
@@ -532,7 +531,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                     if (!_isSearching)
                                       Text(
                                         _getSortDescription(),
-                                        style: GoogleFonts.cairo(
+                                        style: const TextStyle(
                                           fontSize: 11,
                                           color: isDark
                                               ? Colors.grey.shade500
@@ -561,7 +560,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                         const SizedBox(width: 6),
                                         Text(
                                           'إضافة عميل',
-                                          style: GoogleFonts.cairo(
+                                          style: const TextStyle(
                                               color: Colors.white,
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold),
@@ -612,12 +611,12 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                   const EdgeInsets.symmetric(horizontal: 12),
                               child: TextField(
                                 controller: _searchController,
-                                style: GoogleFonts.cairo(
+                                style: const TextStyle(
                                     color:
                                         isDark ? Colors.white : Colors.black),
                                 decoration: InputDecoration(
                                   hintText: 'ابحث...',
-                                  hintStyle: GoogleFonts.cairo(
+                                  hintStyle: const TextStyle(
                                       color: isDark
                                           ? Colors.grey.shade500
                                           : Colors.grey.shade400),
@@ -644,7 +643,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                         children: [
                           Text(
                             'فرز :',
-                            style: GoogleFonts.cairo(
+                            style: const TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.w600,
                               color: isDark ? Colors.white70 : Colors.black87,
@@ -704,7 +703,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                   const SizedBox(height: 16),
                                   Text(
                                     'لا توجد نتائج مطابقة',
-                                    style: GoogleFonts.cairo(
+                                    style: const TextStyle(
                                       fontSize: 16,
                                       color: isDark
                                           ? Colors.grey.shade400
@@ -756,7 +755,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                               children: [
                                                 Text(
                                                   customer.name,
-                                                  style: GoogleFonts.cairo(
+                                                  style: const TextStyle(
                                                     fontSize: 16,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -773,8 +772,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                     const SizedBox(width: 4),
                                                     Text(
                                                         '${customer.transactions.length} عملية',
-                                                        style: GoogleFonts
-                                                            .cairo()),
+                                                        style: const TextStyle(fontFamily: 'Arial')),
                                                     const SizedBox(width: 10),
                                                     Icon(
                                                         Icons
@@ -784,8 +782,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                             .grey.shade600),
                                                     const SizedBox(width: 4),
                                                     Text(mostUsedCurrency,
-                                                        style: GoogleFonts
-                                                            .cairo()),
+                                                        style: const TextStyle(fontFamily: 'Arial')),
                                                   ],
                                                 ),
                                               ],
@@ -805,20 +802,20 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                         if (runningBalance < 0)
                                                           TextSpan(
                                                             text: '- ',
-                                                            style: GoogleFonts
-                                                                .cairo(
+                                                            style: const TextStyle(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .bold,
                                                               fontSize: 16,
                                                               color: Colors.red,
+                                                              fontFamily: 'Arial',
                                                             ),
                                                           ),
                                                         TextSpan(
                                                           text:
                                                               '${runningBalance.abs().toStringAsFixed(0)} ',
                                                           style:
-                                                              GoogleFonts.cairo(
+                                                              const TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 16,
@@ -834,7 +831,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                           text:
                                                               '${customer.transactions.isNotEmpty ? customer.transactions.first.currency : ''}',
                                                           style:
-                                                              GoogleFonts.cairo(
+                                                              const TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 16,
@@ -853,7 +850,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                     runningBalance >= 0
                                                         ? 'له'
                                                         : 'عليه',
-                                                    style: GoogleFonts.cairo(
+                                                    style: const TextStyle(
                                                         color: Colors
                                                             .grey.shade600),
                                                   ),
@@ -872,8 +869,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
                                                       SnackBar(
                                                         content: Text(
                                                           'رصيد العميل صفر - لا يوجد مبلغ للسداد',
-                                                          style: GoogleFonts
-                                                              .cairo(),
+                                                          style: const TextStyle(fontFamily: 'Arial'),
                                                         ),
                                                         backgroundColor:
                                                             Colors.orange,
@@ -1014,7 +1010,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
         SnackBar(
           content: Text(
             confirmationMessage,
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(),
           ),
           backgroundColor: Colors.green,
           duration: const Duration(seconds: 4),
@@ -1025,7 +1021,7 @@ class _CustomersScreenState extends State<CustomersScreen> {
         SnackBar(
           content: Text(
             'حدث خطأ أثناء التسوية: $e',
-            style: GoogleFonts.cairo(),
+            style: const TextStyle(),
           ),
           backgroundColor: Colors.red,
         ),

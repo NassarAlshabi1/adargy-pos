@@ -28,7 +28,6 @@ dependencies:
   file_picker: ^8.3.2
   permission_handler: ^11.3.1
   arabic_font: ^0.0.9
-  google_fonts: ^6.2.1
   device_info_plus: ^9.0.2
   shared_preferences: ^2.2.2
   open_file: ^3.3.2
@@ -68,6 +67,10 @@ flutter_launcher_icons:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Arial
+      fonts:
+        - asset: lib/assets/fonts/arial.ttf
   assets:
      - lib/assets/fonts/cairo.ttf
      - lib/assets/fonts/NotoNaskhArabic-Regular.ttf

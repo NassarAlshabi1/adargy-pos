@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Colors
@@ -56,7 +55,7 @@ class AppTheme {
     scaffoldBackgroundColor: lightScaffoldColor,
     cardColor: lightCardColor,
     dividerColor: lightDividerColor,
-    fontFamily: 'Cairo',
+    fontFamily: 'Arial',
     colorScheme: const ColorScheme.light(
       primary: primaryColor,
       secondary: secondaryColor,
@@ -68,10 +67,11 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: primaryColor,
       foregroundColor: Colors.white,
-      titleTextStyle: GoogleFonts.cairo(
+      titleTextStyle: const TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.bold,
         color: Colors.white,
+        fontFamily: 'Arial',
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -82,9 +82,10 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -95,9 +96,10 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -106,9 +108,10 @@ class AppTheme {
         foregroundColor: primaryColor,
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -148,38 +151,45 @@ class AppTheme {
       hintStyle: TextStyle(color: lightSecondaryTextColor.withOpacity(0.7)),
     ),
     textTheme: TextTheme(
-      displayLarge: GoogleFonts.cairo(
+      displayLarge: const TextStyle(
         color: lightTextColor,
         fontSize: 32,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      displayMedium: GoogleFonts.cairo(
+      displayMedium: const TextStyle(
         color: lightTextColor,
         fontSize: 28,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      displaySmall: GoogleFonts.cairo(
+      displaySmall: const TextStyle(
         color: lightTextColor,
         fontSize: 24,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      headlineMedium: GoogleFonts.cairo(
+      headlineMedium: const TextStyle(
         color: lightTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      titleLarge: GoogleFonts.cairo(
+      titleLarge: const TextStyle(
         color: lightTextColor,
         fontSize: 18,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      bodyLarge: GoogleFonts.cairo(
+      bodyLarge: const TextStyle(
         color: lightTextColor,
         fontSize: 16,
+        fontFamily: 'Arial',
       ),
-      bodyMedium: GoogleFonts.cairo(
+      bodyMedium: const TextStyle(
         color: lightTextColor,
         fontSize: 14,
+        fontFamily: 'Arial',
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -188,12 +198,14 @@ class AppTheme {
       unselectedItemColor: lightSecondaryTextColor,
       type: BottomNavigationBarType.fixed,
       elevation: largeElevation,
-      selectedLabelStyle: GoogleFonts.cairo(
+      selectedLabelStyle: const TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      unselectedLabelStyle: GoogleFonts.cairo(
+      unselectedLabelStyle: const TextStyle(
         fontSize: 12,
+        fontFamily: 'Arial',
       ),
     ),
     listTileTheme: const ListTileThemeData(
@@ -201,9 +213,10 @@ class AppTheme {
     ),
     snackBarTheme: SnackBarThemeData(
       backgroundColor: primaryColor,
-      contentTextStyle: GoogleFonts.cairo(
+      contentTextStyle: const TextStyle(
         color: Colors.white,
         fontSize: 14,
+        fontFamily: 'Arial',
       ),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
@@ -212,14 +225,16 @@ class AppTheme {
       backgroundColor: lightCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-      titleTextStyle: GoogleFonts.cairo(
+      titleTextStyle: const TextStyle(
         color: lightTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      contentTextStyle: GoogleFonts.cairo(
+      contentTextStyle: const TextStyle(
         color: lightTextColor,
         fontSize: 16,
+        fontFamily: 'Arial',
       ),
     ),
     platform: TargetPlatform.android,
@@ -233,7 +248,7 @@ class AppTheme {
     scaffoldBackgroundColor: darkScaffoldColor,
     cardColor: darkCardColor,
     dividerColor: darkDividerColor,
-    fontFamily: 'Cairo',
+    fontFamily: 'Arial',
     colorScheme: const ColorScheme.dark(
       primary: primaryColor,
       secondary: secondaryColor,
@@ -246,10 +261,11 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: darkCardColor,
       foregroundColor: darkTextColor,
-      titleTextStyle: GoogleFonts.cairo(
+      titleTextStyle: const TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.bold,
         color: darkTextColor,
+        fontFamily: 'Arial',
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -260,9 +276,10 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -273,9 +290,10 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
         shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -284,9 +302,10 @@ class AppTheme {
         foregroundColor: primaryColor,
         padding: const EdgeInsets.symmetric(
             horizontal: mediumPadding, vertical: smallPadding),
-        textStyle: GoogleFonts.cairo(
+        textStyle: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
+          fontFamily: 'Arial',
         ),
       ),
     ),
@@ -326,38 +345,45 @@ class AppTheme {
       hintStyle: TextStyle(color: darkSecondaryTextColor.withOpacity(0.7)),
     ),
     textTheme: TextTheme(
-      displayLarge: GoogleFonts.cairo(
+      displayLarge: const TextStyle(
         color: darkTextColor,
         fontSize: 32,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      displayMedium: GoogleFonts.cairo(
+      displayMedium: const TextStyle(
         color: darkTextColor,
         fontSize: 28,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      displaySmall: GoogleFonts.cairo(
+      displaySmall: const TextStyle(
         color: darkTextColor,
         fontSize: 24,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      headlineMedium: GoogleFonts.cairo(
+      headlineMedium: const TextStyle(
         color: darkTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      titleLarge: GoogleFonts.cairo(
+      titleLarge: const TextStyle(
         color: darkTextColor,
         fontSize: 18,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      bodyLarge: GoogleFonts.cairo(
+      bodyLarge: const TextStyle(
         color: darkTextColor,
         fontSize: 16,
+        fontFamily: 'Arial',
       ),
-      bodyMedium: GoogleFonts.cairo(
+      bodyMedium: const TextStyle(
         color: darkTextColor,
         fontSize: 14,
+        fontFamily: 'Arial',
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -366,11 +392,11 @@ class AppTheme {
       unselectedItemColor: darkSecondaryTextColor,
       type: BottomNavigationBarType.fixed,
       elevation: largeElevation,
-      selectedLabelStyle: GoogleFonts.cairo(
+      selectedLabelStyle: const TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.bold,
       ),
-      unselectedLabelStyle: GoogleFonts.cairo(
+      unselectedLabelStyle: const TextStyle(
         fontSize: 12,
       ),
     ),
@@ -379,9 +405,10 @@ class AppTheme {
     ),
     snackBarTheme: SnackBarThemeData(
       backgroundColor: darkCardColor,
-      contentTextStyle: GoogleFonts.cairo(
+      contentTextStyle: const TextStyle(
         color: darkTextColor,
         fontSize: 14,
+        fontFamily: 'Arial',
       ),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
@@ -390,14 +417,16 @@ class AppTheme {
       backgroundColor: darkCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
-      titleTextStyle: GoogleFonts.cairo(
+      titleTextStyle: const TextStyle(
         color: darkTextColor,
         fontSize: 20,
         fontWeight: FontWeight.bold,
+        fontFamily: 'Arial',
       ),
-      contentTextStyle: GoogleFonts.cairo(
+      contentTextStyle: const TextStyle(
         color: darkTextColor,
         fontSize: 16,
+        fontFamily: 'Arial',
       ),
     ),
     platform: TargetPlatform.android,

@@ -61,7 +61,7 @@ class CustomButton extends StatelessWidget {
           ),
         Text(
           text,
-          style: GoogleFonts.cairo(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: _getTextSize(size),
           ),

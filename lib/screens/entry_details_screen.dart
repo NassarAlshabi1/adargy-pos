@@ -33,7 +33,7 @@ class EntryDetailsScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             'تفاصيل الإدخال',
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -115,7 +115,7 @@ class EntryDetailsScreen extends StatelessWidget {
                 children: [
                   Text(
                     entry.item,
-                    style: GoogleFonts.cairo(
+                    style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: isDark ? Colors.white : Colors.grey.shade800,
@@ -134,7 +134,7 @@ class EntryDetailsScreen extends StatelessWidget {
                       const SizedBox(width: 4),
                       Text(
                         DateFormat('yyyy-MM-dd').format(entry.date),
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 14,
                           color: isDark
                               ? Colors.grey.shade400
@@ -193,7 +193,7 @@ class EntryDetailsScreen extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(
                   'البيانات التفصيلية',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -238,7 +238,7 @@ class EntryDetailsScreen extends StatelessWidget {
                           vertical: 10, horizontal: 4),
                       child: Text(
                         'المورد',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
@@ -249,7 +249,7 @@ class EntryDetailsScreen extends StatelessWidget {
                           vertical: 10, horizontal: 4),
                       child: Text(
                         entry.customerName ?? 'غير محدد',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
@@ -310,7 +310,7 @@ class EntryDetailsScreen extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(
                   'ملخص الأرباح',
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: secondaryColor,
@@ -378,7 +378,7 @@ class EntryDetailsScreen extends StatelessWidget {
               Flexible(
                 child: Text(
                   label,
-                  style: GoogleFonts.cairo(
+                  style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: color,
@@ -391,7 +391,7 @@ class EntryDetailsScreen extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             value,
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
               color: isDark ? Colors.white : Colors.grey.shade800,
@@ -423,7 +423,7 @@ class EntryDetailsScreen extends StatelessWidget {
             icon: const Icon(Icons.edit_outlined, size: 20),
             label: Text(
               'تعديل',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
               ),
@@ -453,7 +453,7 @@ class EntryDetailsScreen extends StatelessWidget {
                     backgroundColor: dialogBgColor,
                     title: Text(
                       'تأكيد الحذف',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color:
                             localIsDark ? Colors.white : Colors.grey.shade800,
@@ -461,7 +461,7 @@ class EntryDetailsScreen extends StatelessWidget {
                     ),
                     content: Text(
                       'هل أنت متأكد أنك تريد حذف هذا الإدخال؟',
-                      style: GoogleFonts.cairo(
+                      style: const TextStyle(
                         color: localIsDark
                             ? Colors.grey.shade300
                             : Colors.grey.shade700,
@@ -475,7 +475,7 @@ class EntryDetailsScreen extends StatelessWidget {
                         onPressed: () => Navigator.of(context).pop(false),
                         child: Text(
                           'إلغاء',
-                          style: GoogleFonts.cairo(
+                          style: const TextStyle(
                             color: localIsDark
                                 ? Colors.grey.shade300
                                 : Colors.grey.shade700,
@@ -486,7 +486,7 @@ class EntryDetailsScreen extends StatelessWidget {
                         onPressed: () => Navigator.of(context).pop(true),
                         child: Text(
                           'حذف',
-                          style: GoogleFonts.cairo(
+                          style: const TextStyle(
                             color: Colors.red.shade700,
                             fontWeight: FontWeight.bold,
                           ),
@@ -506,7 +506,7 @@ class EntryDetailsScreen extends StatelessWidget {
                     SnackBar(
                       content: Text(
                         'تم حذف الإدخال بنجاح',
-                        style: GoogleFonts.cairo(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
@@ -531,7 +531,7 @@ class EntryDetailsScreen extends StatelessWidget {
             icon: const Icon(Icons.delete_outline, size: 20),
             label: Text(
               'حذف',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
               ),
@@ -583,7 +583,7 @@ class EntryDetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
             child: Text(
               label,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 15,
                 fontWeight: isHighlighted ? FontWeight.w900 : FontWeight.bold,
                 color: isHighlighted
@@ -599,7 +599,7 @@ class EntryDetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
             child: Text(
               value,
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 fontSize: 15,
                 fontWeight: isHighlighted ? FontWeight.w900 : FontWeight.w500,
                 color: isHighlighted
@@ -623,7 +623,7 @@ class EntryDetailsScreen extends StatelessWidget {
         backgroundColor: dialogBgColor,
         title: Text(
           'معلومات الإدخال',
-          style: GoogleFonts.cairo(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: isDark ? Colors.white : Colors.grey.shade800,
           ),
@@ -646,7 +646,7 @@ class EntryDetailsScreen extends StatelessWidget {
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'إغلاق',
-              style: GoogleFonts.cairo(
+              style: const TextStyle(
                 color: isDark ? Colors.blue.shade300 : Colors.blue.shade700,
                 fontWeight: FontWeight.bold,
               ),
@@ -665,7 +665,7 @@ class EntryDetailsScreen extends StatelessWidget {
         children: [
           Text(
             label,
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,
               color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
@@ -674,7 +674,7 @@ class EntryDetailsScreen extends StatelessWidget {
           const SizedBox(height: 4),
           Text(
             value,
-            style: GoogleFonts.cairo(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
               color: isDark ? Colors.white : Colors.grey.shade800,

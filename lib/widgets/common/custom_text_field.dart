@@ -98,7 +98,7 @@ class CustomTextField extends StatelessWidget {
       initialValue: initialValue,
       textDirection: textDirection ?? TextDirection.rtl,
       textAlign: TextAlign.right,
-      style: GoogleFonts.cairo(
+      style: const TextStyle(
         color: isDark ? AppTheme.darkTextColor : AppTheme.lightTextColor,
         fontSize: 16,
       ),
@@ -153,19 +153,19 @@ class CustomTextField extends StatelessWidget {
         prefixText: prefixText,
         suffixText: suffixText,
         errorText: errorText,
-        labelStyle: GoogleFonts.cairo(
+        labelStyle: const TextStyle(
           color: isDark
               ? AppTheme.darkSecondaryTextColor
               : AppTheme.lightSecondaryTextColor,
           fontSize: 16,
         ),
-        hintStyle: GoogleFonts.cairo(
+        hintStyle: const TextStyle(
           color: isDark
               ? AppTheme.darkSecondaryTextColor.withOpacity(0.7)
               : AppTheme.lightSecondaryTextColor.withOpacity(0.7),
           fontSize: 14,
         ),
-        errorStyle: GoogleFonts.cairo(
+        errorStyle: const TextStyle(
           color: AppTheme.dangerColor,
           fontSize: 12,
         ),
