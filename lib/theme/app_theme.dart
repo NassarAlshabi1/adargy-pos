@@ -117,7 +117,7 @@ class AppTheme {
       foregroundColor: Colors.white,
       elevation: mediumElevation,
     ),
-    cardTheme: CardTheme(
+    cardTheme: const CardTheme().copyWith(
       color: lightCardColor,
       elevation: smallElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
@@ -208,7 +208,7 @@ class AppTheme {
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
     ),
-    dialogTheme: DialogTheme(
+    dialogTheme: const DialogTheme().copyWith(
       backgroundColor: lightCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
@@ -295,7 +295,7 @@ class AppTheme {
       foregroundColor: Colors.white,
       elevation: mediumElevation,
     ),
-    cardTheme: CardTheme(
+    cardTheme: const CardTheme().copyWith(
       color: darkCardColor,
       elevation: smallElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
@@ -386,7 +386,7 @@ class AppTheme {
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
     ),
-    dialogTheme: DialogTheme(
+    dialogTheme: const DialogTheme().copyWith(
       backgroundColor: darkCardColor,
       elevation: largeElevation,
       shape: RoundedRectangleBorder(borderRadius: mediumRadius),
