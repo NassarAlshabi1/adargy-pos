@@ -45,7 +45,7 @@ bool isDesktopOrWeb() {
 }
 
 class AlhaythamTradeApp extends StatelessWidget {
-  const FinancialManagementApp({super.key});
+  const AlhaythamTradeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
