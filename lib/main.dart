@@ -11,6 +11,16 @@ import 'screens/customer_screen/customers_screen.dart';
 import 'screens/daily_reports/daily_reports.dart';
 import 'screens/statistics_screen.dart';
 import 'theme/app_theme.dart';
+import 'src/screens/sales_screen.dart';
+import 'src/screens/products/products_screen.dart';
+import 'src/screens/categories_screen.dart';
+import 'src/screens/returns_screen.dart';
+import 'src/screens/reports_screen.dart';
+import 'src/screens/suppliers_screen.dart';
+import 'src/screens/expenses_screen.dart';
+import 'src/screens/debts_screen.dart';
+import 'src/screens/analytics_screen.dart';
+import 'src/screens/discount_coupons_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -66,6 +76,16 @@ class FinancialManagementApp extends StatelessWidget {
               '/daily-reports': (context) => const DailyReportsScreen(),
               '/statistics': (context) => const StatisticsScreen(),
               '/customers': (context) => const CustomersScreen(),
+              '/sales': (context) => const SalesScreen(),
+              '/products': (context) => const ProductsScreen(),
+              '/categories': (context) => const CategoriesScreen(),
+              '/returns': (context) => const ReturnsScreen(),
+              '/reports': (context) => const ReportsScreen(),
+              '/suppliers': (context) => const SuppliersScreen(),
+              '/expenses': (context) => const ExpensesScreen(),
+              '/debts': (context) => const DebtsScreen(),
+              '/analytics': (context) => const AnalyticsScreen(),
+              '/discounts': (context) => const DiscountCouponsScreen(),
             },
           );
         },

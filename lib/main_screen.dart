@@ -19,6 +19,16 @@ import 'screens/entry_form.dart';
 import 'database/customer_database_helper.dart';
 import 'theme/app_theme.dart';
 import 'widgets/common/custom_app_bar.dart';
+import 'src/screens/sales_screen.dart';
+import 'src/screens/products/products_screen.dart';
+import 'src/screens/categories_screen.dart';
+import 'src/screens/returns_screen.dart';
+import 'src/screens/reports_screen.dart';
+import 'src/screens/suppliers_screen.dart';
+import 'src/screens/expenses_screen.dart';
+import 'src/screens/debts_screen.dart';
+import 'src/screens/analytics_screen.dart';
+import 'src/screens/discount_coupons_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -32,10 +42,20 @@ class _MainScreenState extends State<MainScreen>
   // Constants
   static const String appVersion = '1.0.0';
   static const List<String> _tabTitles = [
+    'الرئيسية',
+    'المبيعات',
+    'المنتجات',
     'التقارير اليومية',
     'الإحصائيات',
     'العملاء',
+    'الديون',
+    'المرتجعات',
+    'التصنيفات',
+    'الموردين',
+    'المصروفات',
+    'الأرباح',
     'السدادات',
+    'الأكواد',
   ];
 
   // State variables
@@ -47,20 +67,45 @@ class _MainScreenState extends State<MainScreen>
   // Screen definitions
   final List<Widget> _screens = const [
     DailyReportsScreen(),
+    SalesScreen(),
+    ProductsScreen(),
+    DailyReportsScreen(),
     StatisticsScreen(),
     CustomersScreen(),
+    DebtsScreen(),
+    ReturnsScreen(),
+    CategoriesScreen(),
+    SuppliersScreen(),
+    ExpensesScreen(),
+    ReportsScreen(),
     SettlementsScreen(),
+    DiscountCouponsScreen(),
   ];
 
   // Tab navigation data
   final List<_NavItemData> _navItems = [
+    const _NavItemData(
+      label: 'الرئيسية',
+      activeIcon: Icons.dashboard,
+      inactiveIcon: Icons.dashboard_outlined,
+    ),
+    const _NavItemData(
+      label: 'المبيعات',
+      activeIcon: Icons.point_of_sale,
+      inactiveIcon: Icons.point_of_sale_outlined,
+    ),
+    const _NavItemData(
+      label: 'المنتجات',
+      activeIcon: Icons.inventory_2,
+      inactiveIcon: Icons.inventory_2_outlined,
+    ),
     const _NavItemData(
       label: 'التقارير',
       activeIcon: Icons.assignment,
       inactiveIcon: Icons.assignment_outlined,
     ),
     const _NavItemData(
-      label: 'الإحصائيات',
+      label: 'الإحصاء',
       activeIcon: Icons.bar_chart,
       inactiveIcon: Icons.bar_chart_outlined,
     ),
@@ -70,9 +115,44 @@ class _MainScreenState extends State<MainScreen>
       inactiveIcon: Icons.people_outline,
     ),
     const _NavItemData(
+      label: 'الديون',
+      activeIcon: Icons.account_balance,
+      inactiveIcon: Icons.account_balance_outlined,
+    ),
+    const _NavItemData(
+      label: 'المرتجعات',
+      activeIcon: Icons.keyboard_return,
+      inactiveIcon: Icons.keyboard_return_outlined,
+    ),
+    const _NavItemData(
+      label: 'التصنيفات',
+      activeIcon: Icons.category,
+      inactiveIcon: Icons.category_outlined,
+    ),
+    const _NavItemData(
+      label: 'الموردين',
+      activeIcon: Icons.local_shipping,
+      inactiveIcon: Icons.local_shipping_outlined,
+    ),
+    const _NavItemData(
+      label: 'المصروفات',
+      activeIcon: Icons.money_off,
+      inactiveIcon: Icons.money_off_outlined,
+    ),
+    const _NavItemData(
+      label: 'الأرباح',
+      activeIcon: Icons.trending_up,
+      inactiveIcon: Icons.trending_up_outlined,
+    ),
+    const _NavItemData(
       label: 'السدادات',
       activeIcon: Icons.check_circle,
       inactiveIcon: Icons.check_circle_outline,
+    ),
+    const _NavItemData(
+      label: 'الأكواد',
+      activeIcon: Icons.local_offer,
+      inactiveIcon: Icons.local_offer_outlined,
     ),
   ];
 
