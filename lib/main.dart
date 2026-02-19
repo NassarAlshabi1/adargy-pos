@@ -37,14 +37,14 @@ void main() {
     sqflite_ffi.databaseFactory = sqflite_ffi.databaseFactoryFfi;
   }
 
-  runApp(const FinancialManagementApp());
+  runApp(const AlhaythamTradeApp());
 }
 
 bool isDesktopOrWeb() {
   return Platform.isWindows || Platform.isLinux || Platform.isMacOS;
 }
 
-class FinancialManagementApp extends StatelessWidget {
+class AlhaythamTradeApp extends StatelessWidget {
   const FinancialManagementApp({super.key});
 
   @override
@@ -57,7 +57,7 @@ class FinancialManagementApp extends StatelessWidget {
       child: Consumer<SettingsProvider>(
         builder: (context, settingsProvider, child) {
           return MaterialApp(
-            title: 'دفتر مهندس',
+            title: 'الهيثم للتجارة',
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             themeMode: settingsProvider.themeMode,

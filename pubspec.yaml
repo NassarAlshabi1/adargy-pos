@@ -1,5 +1,5 @@
-name: daily
-description: "إدارة مبيعات ومخازن - Eng: Nassar Alshabi"
+name: alhaytham_trade
+description: "الهيثم للتجارة - نظام إدارة المبيعات والمخازن"
 publish_to: 'none'
 
 version: 1.0.0+1
