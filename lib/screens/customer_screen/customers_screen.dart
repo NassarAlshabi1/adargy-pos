@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
-import 'package:daily/database/customer_database_helper.dart';
-import 'package:daily/models/customer.dart';
+import 'package:alhaytham_trade/database/customer_database_helper.dart';
+import 'package:alhaytham_trade/models/customer.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'details_screen/customer_detail_screen.dart';

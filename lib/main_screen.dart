@@ -6,9 +6,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
-import 'package:daily/models/entry.dart';
-import 'package:daily/providers/entry_provider.dart';
-import 'package:daily/providers/settings_provider.dart';
+import 'package:alhaytham_trade/models/entry.dart';
+import 'package:alhaytham_trade/providers/entry_provider.dart';
+import 'package:alhaytham_trade/providers/settings_provider.dart';
 
 import 'screens/daily_reports/daily_reports.dart';
 import 'screens/statistics_screen.dart';

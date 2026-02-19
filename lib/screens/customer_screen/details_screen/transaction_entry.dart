@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
-import 'package:daily/database/customer_database_helper.dart';
-import 'package:daily/models/customer.dart';
+import 'package:alhaytham_trade/database/customer_database_helper.dart';
+import 'package:alhaytham_trade/models/customer.dart';
 
 class TransactionDialogContent extends StatefulWidget {
   final Function setStateDialog;

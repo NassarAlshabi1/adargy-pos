@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'dart:ui' as ui;
-import 'package:daily/models/customer.dart';
-import 'package:daily/screens/customer_screen/details_screen/utils/text_utils.dart';
+import 'package:alhaytham_trade/models/customer.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/utils/text_utils.dart';
 
 /// Widget for displaying customer transactions in a table format
 class TransactionTable extends StatelessWidget {

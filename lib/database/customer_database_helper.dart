@@ -1,7 +1,7 @@
 // customer_database_helper.dart
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'package:daily/models/customer.dart';
+import 'package:alhaytham_trade/models/customer.dart';
 
 class CustomerDatabaseHelper {
   static final CustomerDatabaseHelper _instance =

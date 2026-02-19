@@ -4,7 +4,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:printing/printing.dart';
 import 'package:pdf/pdf.dart';
-import 'package:daily/utils/pdf_generator.dart';
+import 'package:alhaytham_trade/utils/pdf_generator.dart';
 
 /// Utility functions for PDF operations in the customer detail screen
 

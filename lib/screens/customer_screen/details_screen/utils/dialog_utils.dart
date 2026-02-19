@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
-import 'package:daily/models/customer.dart';
-import 'package:daily/database/customer_database_helper.dart';
-import 'package:daily/screens/customer_screen/details_screen/transaction_entry.dart';
+import 'package:alhaytham_trade/models/customer.dart';
+import 'package:alhaytham_trade/database/customer_database_helper.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/transaction_entry.dart';
 
 /// Utility functions for dialog operations in the customer detail screen
 

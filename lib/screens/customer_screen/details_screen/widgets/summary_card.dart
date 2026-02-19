@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
-import 'package:daily/models/customer.dart';
+import 'package:alhaytham_trade/models/customer.dart';
 
 /// Widget for displaying customer account summary
 class SummaryCard extends StatelessWidget {

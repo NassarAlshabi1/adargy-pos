@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
-import 'package:daily/database/customer_database_helper.dart';
-import 'package:daily/models/customer.dart';
-import 'package:daily/screens/customer_screen/details_screen/widgets/transaction_table.dart';
-import 'package:daily/screens/customer_screen/details_screen/widgets/summary_card.dart';
-import 'package:daily/screens/customer_screen/details_screen/utils/pdf_utils.dart';
-import 'package:daily/screens/customer_screen/details_screen/utils/dialog_utils.dart';
+import 'package:alhaytham_trade/database/customer_database_helper.dart';
+import 'package:alhaytham_trade/models/customer.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/widgets/transaction_table.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/widgets/summary_card.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/utils/pdf_utils.dart';
+import 'package:alhaytham_trade/screens/customer_screen/details_screen/utils/dialog_utils.dart';
 
 /// Main screen for displaying customer details and transactions
 class CustomerDetailScreen extends StatefulWidget {
