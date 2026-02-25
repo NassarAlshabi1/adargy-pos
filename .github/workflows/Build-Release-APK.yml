@@ -1,0 +1,45 @@
+name: Build Release APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-release-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Setup release keystore
+        run: |
+          echo "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" | base64 -di > ${{ runner.temp }}/release-keystore.jks
+          echo "ANDROID_KEYSTORE_PATH=${{ runner.temp }}/release-keystore.jks" >> $GITHUB_ENV
+          echo "ANDROID_KEYSTORE_PASSWORD=adargy123" >> $GITHUB_ENV
+          echo "ANDROID_KEY_ALIAS=adargy-key" >> $GITHUB_ENV
+          echo "ANDROID_KEY_PASSWORD=adargy123" >> $GITHUB_ENV
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
